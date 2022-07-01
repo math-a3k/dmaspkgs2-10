@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "e3191d2c99576979a7e7f719c55d21620f7a395c1e0aaccbb0d229fdd8063ac1"
+            "sha256": "5765e5969d67cc64b72c7baa9f3777cdffb99a4f11176acd41a0555ebde28b7f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -55,10 +55,6 @@
             ],
             "markers": "python_version ~= '3.7'",
             "version": "==5.2.0"
-        },
-        "cb-django-articles": {
-            "editable": true,
-            "path": "./modules/django_articles"
         },
         "certifi": {
             "hashes": [
@@ -297,7 +293,6 @@
             "version": "==3.7.1"
         },
         "google-api-core": {
-            "extras": [],
             "hashes": [
                 "sha256:06f7244c640322b508b125903bb5701bebabce8832f85aba9335ec00b3d02edc",
                 "sha256:93c6a91ccac79079ac6bbf8b74ee75db970cc899278b97d53bc012f35908cf50"
