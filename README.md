@@ -57,7 +57,6 @@ This react_native application was built with Crowdbotics www.crowdbotics.com
 This section will show any installed modules you add from the Storyboard Modules section.
 - [privacy-policy]()
 - [react-native-push-notifications](modules/push-notifications)
-- [django-articles](backend/modules)
 
 # Getting started: Frontend
 
