@@ -8,8 +8,10 @@ GLOBAL_OPTIONS_FILE_PATH = f"{Path.cwd()}/modules/options.json"
 
 def posixpath_to_modulepath(posixpath):
     parent_mondule_path = posixpath.parent.as_posix().split("/")
-    module_name = [posixpath.stem, ]
-    return ".".join(parent_mondule_path + module_name) 
+    module_name = [
+        posixpath.stem,
+    ]
+    return ".".join(parent_mondule_path + module_name)
 
 
 def get_options(module_slug, option_key):
@@ -24,13 +26,9 @@ def get_options(module_slug, option_key):
         if module_options:
             option_value = module_options.get(option_key, None)
 
-    module_options_file = next(
-        Path(".").rglob(f"**/{module_slug}/**/options.py")
-    )
+    module_options_file = next(Path(".").rglob(f"**/{module_slug}/**/options.py"))
 
     options_module = posixpath_to_modulepath(module_options_file)
-    default_value = getattr(
-        importlib.import_module(options_module), option_key
-    )
+    default_value = getattr(importlib.import_module(options_module), option_key)
 
     return option_value if option_value else default_value
